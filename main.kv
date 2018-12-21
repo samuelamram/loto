@@ -1,0 +1,24 @@
+<GoButton>:
+    text: 'Go'
+
+<LotoScreen>:
+    liste_des_numeros_tires: liste_des_numeros_tires
+    tirage: tirage
+    orientation: 'vertical'
+    spacing: 5
+    Label:
+        id: tirage
+        font_size: dp(300)
+        bold: True
+        text: '##'
+    Label:
+        id: liste_des_numeros_tires
+        text_size: self.size
+        markup: True
+        #size_hint=(1,0.5)
+        text: ''
+    GoButton:
+        on_release: root.nouveau_tirage()
+        # self.size_hint=(1, None)
+        # self.width=800
+        # self.height=300
